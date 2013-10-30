@@ -115,5 +115,5 @@ alias mcc="mate-control-center"
 alias msm="mate-system-monitor"
 alias msl="mate-system-log"
 alias cdv="cd $WORKON_HOME"
-alias cdp="cd ~/projects"
+
 
