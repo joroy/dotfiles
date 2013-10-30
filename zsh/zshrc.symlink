@@ -1,8 +1,11 @@
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
-# your project folder that we can `c [tab]` to
-export WORKSPACE=~/code/hg
+# your workspace/code folder that we can `c [tab]` to
+export WORKSPACES=~/code/hg
+
+# your project folder that we can `p [tab]` to
+export PROJECTS=~/projects
 
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
