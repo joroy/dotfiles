@@ -1,2 +1,16 @@
 [
+{ "keys": ["alt+x"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
+{ "keys": ["ctrl+s"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":false} },
+{ "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "incremental_find", "reverse":true} },
+{ "keys": ["ctrl+x"], "command": "unbound" },
+{ "keys": ["ctrl+x", "ctrl+k"], "command": "close" },
+{ "keys": ["ctrl+x", "ctrl+c"], "command": "exit" },
+{ "keys": ["alt+g", "g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+{ "keys": ["ctrl+<"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+{ "keys": ["ctrl+x", "ctrl+f"], "command": "prompt_open_file" },
+{ "keys": ["ctrl+x", "ctrl+s"], "command": "save" },
+{ "keys": ["ctrl+k", "ctrl+c"], "command": "toggle_comment", "args": { "block": false } },
+{ "keys": ["alt+<"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+{ "keys": ["alt+shift+<"], "command": "move_to", "args": {"to": "eof", "extend": false} }
 ]
+

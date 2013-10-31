@@ -7,6 +7,9 @@ export WORKSPACES=~/code/hg
 # your project folder that we can `p [tab]` to
 export PROJECTS=~/projects
 
+# your virtualenv folder that we can `v [tab]` to
+export WORKON_HOME=~/venvs
+
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 if [[ -a ~/.localrc ]]
@@ -104,7 +107,6 @@ fi
 # Exports
 export apt_pref="apt-get"
 export CVSROOT=:ext:jroy@code.outbox:/var/cvs
-export WORKON_HOME=~/venvs
 export VIRTUAL_ENV_DISABLE_PROMPT=
 
 # extra aliases
@@ -114,6 +116,6 @@ alias et="emacs -nw"
 alias mcc="mate-control-center"
 alias msm="mate-system-monitor"
 alias msl="mate-system-log"
-alias cdv="cd $WORKON_HOME"
+
 
 
