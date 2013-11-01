@@ -3,7 +3,7 @@
 set -x
 
 # symlink settings in
-mv $SUBLIME_DIR/User $SUBLIME_DIR/User.backup"
+mv $SUBLIME_DIR/User $SUBLIME_DIR/User.backup
 ln -s "$DOTFILES/sublime2/User" $SUBLIME_DIR
 
 
