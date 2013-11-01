@@ -116,6 +116,6 @@ alias et="emacs -nw"
 alias mcc="mate-control-center"
 alias msm="mate-system-monitor"
 alias msl="mate-system-log"
-
+alias rgrep="rgrep --color=always"
 
 
