@@ -5,7 +5,7 @@ export DOTFILES=$HOME/.dotfiles
 export WORKSPACES=~/code/hg
 
 # your project folder that we can `p [tab]` to
-export PROJECTS=~/projects
+export PROJECT_HOME=~/projects
 
 # your virtualenv folder that we can `v [tab]` to
 export WORKON_HOME=~/venvs
