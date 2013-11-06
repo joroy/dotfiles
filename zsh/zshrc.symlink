@@ -2,7 +2,7 @@
 export DOTFILES=$HOME/.dotfiles
 
 # your workspace/code folder that we can `c [tab]` to
-export WORKSPACES=~/code/hg
+export WORKSPACES=~/code
 
 # your project folder that we can `p [tab]` to
 export PROJECT_HOME=~/projects

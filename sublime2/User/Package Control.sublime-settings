@@ -1,0 +1,14 @@
+{
+	"installed_packages":
+	[
+		"DocBlockr",
+		"Gist",
+		"Jedi - Python autocompletion",
+		"Nettuts+ Fetch",
+		"Package Control",
+		"Python Nose Testing Snippets",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Tag"
+	]
+}
