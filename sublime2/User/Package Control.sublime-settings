@@ -1,12 +1,21 @@
 {
 	"installed_packages":
 	[
+		"AdvancedNewFile",
+		"C++ Snippets",
+		"CSS Snippets",
 		"DocBlockr",
 		"Gist",
+		"HTML Snippets",
+		"JavaScript Patterns",
+		"JavaScript Snippets",
 		"Jedi - Python autocompletion",
+		"JsFormat",
 		"Nettuts+ Fetch",
 		"Package Control",
 		"Python Nose Testing Snippets",
+		"PythonTidy",
+		"SnippetMaker",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"Tag"

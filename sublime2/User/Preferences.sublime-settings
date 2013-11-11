@@ -3,7 +3,10 @@
 	"highlight_line": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"AdvancedNewFile",
+		"C++ Snippets",
+		"DocBlockr"
 	],
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true
