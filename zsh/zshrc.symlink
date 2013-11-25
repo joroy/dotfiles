@@ -117,5 +117,8 @@ alias mcc="mate-control-center"
 alias msm="mate-system-monitor"
 alias msl="mate-system-log"
 alias rgrep="rgrep --color=always"
-
-
+alias ipy="ipython"
+alias hgk="hg kdiff3"
+alias df="df -h"
+alias ob-sync-inventory-tst="rsync -a --delete --progress --exclude=/log --exclude=/spool --exclude=/webq --exclude=/templates --exclude=/inventory --exclude=/layoutsV3 --exclude=/venueMaps --exclude=/venueMapsXML jroy@bfox.prod.tst:/var/opt/outbox/tst/invlib ~/tmp/invlib/tst"
+alias ob-sync-inventory-adc="rsync -a --delete --progress --exclude=/log --exclude=/spool --exclude=/webq --exclude=/templates --exclude=/inventory --exclude=/layoutsV3 --exclude=/venueMaps --exclude=/venueMapsXML jroy@bfox.test.adc:/var/opt/outbox/adc/invlib ~/tmp/invlib/adc"
