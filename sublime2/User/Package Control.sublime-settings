@@ -2,6 +2,7 @@
 	"installed_packages":
 	[
 		"DocBlockr",
+		"FileDiffs",
 		"Format SQL",
 		"Gist",
 		"ImprovedSQL",
