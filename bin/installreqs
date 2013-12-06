@@ -1,0 +1,9 @@
+#!/bin/bash
+if [ -n "$1" ]
+# Test whether command-line argument is present (non-empty).
+then
+  grep -v ==tip $1 | pip install -r /dev/stdin -f http://hummer.pilot.outbox/dist/packages/
+else  
+  echo "Usage: installreqs [project.req]"
+fi
+ 

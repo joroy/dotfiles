@@ -113,7 +113,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 
 # extra aliases
 alias zshconfig="emacs ~/.zshrc"
-alias e="emacs"
+alias e="subl -n"
 alias et="emacs -nw"
 alias mcc="mate-control-center"
 alias msm="mate-system-monitor"
