@@ -41,7 +41,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mercurial debian python virtualenv virtualenvwrapper web-search)
+plugins=(git mercurial debian python virtualenv virtualenvwrapper web-search history cp)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -115,9 +115,6 @@ export VIRTUAL_ENV_DISABLE_PROMPT=
 alias zshconfig="emacs ~/.zshrc"
 alias e="subl -n"
 alias et="emacs -nw"
-alias mcc="mate-control-center"
-alias msm="mate-system-monitor"
-alias msl="mate-system-log"
 alias rgrep="rgrep --color=always"
 alias ipy="ipython"
 alias hgk="hg kdiff3"
@@ -129,3 +126,5 @@ alias ob-sync-inventory-dem='rsync -a --delete --progress --exclude=/log --exclu
 alias ob-sync-inventory-dem-simulate='rsync -an --delete --progress --exclude=/log --exclude=/spool --exclude=/webq --exclude=/templates --exclude=/inventory --exclude=/layoutsV3 --exclude=/venueMaps --exclude=/venueMapsXML jroy@bfox.prod.dem:/var/opt/outbox/dem/ ~/workspace/data/inv/dem/'
 alias ob-sync-inventory-tst='rsync -a --delete --progress --exclude=/log --exclude=/spool --exclude=/webq --exclude=/templates --exclude=/inventory --exclude=/layoutsV3 --exclude=/venueMaps --exclude=/venueMapsXML jroy@bfox.prod.tst:/var/opt/outbox/tst/ ~/workspace/data/inv/tst/'
 alias ob-sync-inventory-tst-simulate='rsync -an --delete --progress --exclude=/log --exclude=/spool --exclude=/webq --exclude=/templates --exclude=/inventory --exclude=/layoutsV3 --exclude=/venueMaps --exclude=/venueMapsXML jroy@bfox.prod.tst:/var/opt/outbox/tst/ ~/workspace/data/inv/tst/'
+
+
