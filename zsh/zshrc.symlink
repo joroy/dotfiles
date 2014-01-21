@@ -110,9 +110,11 @@ fi
 export apt_pref="apt-get"
 export CVSROOT=:ext:jroy@code.outbox:/var/cvs
 export VIRTUAL_ENV_DISABLE_PROMPT=
+export EDITOR="subl"
+export SUDO_EDITOR="emacs"
 
-# extra aliases
-alias zshconfig="emacs ~/.zshrc"
+# Extra aliases
+alias zshconfig="subl -n  ~/.zshrc"
 alias e="subl -n"
 alias et="emacs -nw"
 alias rgrep="rgrep --color=always"
