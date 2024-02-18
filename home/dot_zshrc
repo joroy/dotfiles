@@ -66,9 +66,9 @@ export MANPAGER='less -s -X -F'
 
 # Extra aliases
 alias zshconfig="chezmoi edit ~/.zshrc"
-alias e="emacs"
+alias e="code"
 alias et="emacs -nw"
-alias eg="subl -n"
+alias eg="code"
 alias rgrep="rgrep --color=always"
 alias ipy="ipython"
 alias hgk="hg kdiff3"
@@ -79,6 +79,17 @@ alias as="alias | grep"
 alias es="env | grep"
 #alias ggpushf='git push origin :$(git_current_branch) && git push origin $(git_current_branch)'
 alias ggpushf='git push --force origin $(git_current_branch)'
+{{- if lookPath "bat" }}
+alias cat=bat
+{{- else if lookPath "batcat" }}
+alias cat=batcat
+{{- end }}
+{{- if lookPath "fdfind" }}
+alias fd=fdfind
+{{- end }}
+{{- if lookPath "eza" }}
+alias ls=eza
+{{- end }}
 
 
 # override default color
