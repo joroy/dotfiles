@@ -34,7 +34,9 @@ ssh-keygen -t ed25519 -C "email@email.com"
 sudo brew install $(< mac-base-packages)
 sudo pip install -r python-packages
 brew install chezmoi
-chezmoi init --apply joroy
+chezmoi init --apply --ssh joroy
+ou (si .ssh/config avec multi-clé https://theboreddev.com/use-multiple-ssh-keys-different-git-accounts/)
+chezmoi init --guess-repo-url=false --ssh --apply git@github.com-joroy:joroy/dotfiles.git
 ``
 
 ## Ref (Optional)
