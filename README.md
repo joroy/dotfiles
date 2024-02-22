@@ -23,13 +23,22 @@ chezmoi init --apply joroy
 ## MacOS
 
 ```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew update && brew upgrade 
 cd ~
 mkdir tmp 
 mkdir dev
 mkdir incoming
 
-ssh-keygen -t ed25519 -C "email@email.com"
+brew install gh
+
+# Taf key (default one)
+ssh-keygen -t ed25519 -C "joroyw"
+
+# Personal key
+ssh-keygen -f ~/.ssh/idjoroy -t ed25519 -C "joroy"
+
+
 
 sudo brew install $(< mac-base-packages)
 sudo pip install -r python-packages
