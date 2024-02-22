@@ -34,10 +34,11 @@ brew install gh
 
 # Taf key (default one)
 ssh-keygen -t ed25519 -C "joroyw"
+ssh-add ~/.ssh/id_ed25519
 
 # Personal key
 ssh-keygen -f ~/.ssh/idjoroy -t ed25519 -C "joroy"
-
+ssh-add ~/.ssh/idjoroy
 
 
 sudo brew install $(< mac-base-packages)
