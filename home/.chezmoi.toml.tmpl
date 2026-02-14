@@ -28,9 +28,10 @@
 {{-   end -}}
 {{- end -}}
 
-{{- eq .chezmoi.username "ubuntu" -}}
+{{- if stat "/cdrom/casper" }}
 {{-   $live_ubuntu = true -}}
-{{- end -}}
+{{-   $ephemeral = false -}}
+{{- end }}
 
 {{- if not $ephemeral -}}
 {{-   if eq $hostname "joroy-mbp" -}}
@@ -43,7 +44,7 @@
 {{-   else if stdinIsATTY -}}
 {{-     $headless = promptBoolOnce . "headless" "headless" -}}
 {{-     $ephemeral = promptBoolOnce . "ephemeral" "ephemeral" -}}
-{{-   else if live_ubuntu -}}
+{{-   else if $live_ubuntu -}}
 {{-     $headless = false -}}
 {{-     $ephemeral = false -}}
 {{-   else -}}
