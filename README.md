@@ -10,15 +10,11 @@ mkdir dev
 mkdir incoming
 
 ssh-keygen -t ed25519 -C "email@email.com"
-
-sudo apt install $(< linux-base-packages)
-sudo pip install -r python-packages
 sudo snap install chezmoi --classic
-chezmoi init --apply joroy
+chezmoi init --apply --ssh joroy
 ```
 
 * GnomeTweaks (Revert Caps/Ctrl)
-
 
 ## MacOS
 
