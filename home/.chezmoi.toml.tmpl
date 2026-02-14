@@ -31,6 +31,7 @@
 {{- if stat "/cdrom/casper" }}
 {{-   $live_ubuntu = true -}}
 {{-   $ephemeral = false -}}
+{{-   $headless = false -}}
 {{- end }}
 
 {{- if not $ephemeral -}}
