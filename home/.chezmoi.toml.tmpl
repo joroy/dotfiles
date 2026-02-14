@@ -42,12 +42,12 @@
 {{-     $personal = true -}}
 {{-   else if eq $hostname "manic5" -}}
 {{-     $personal = true -}}
-{{-   else if stdinIsATTY -}}
-{{-     $headless = promptBoolOnce . "headless" "headless" -}}
-{{-     $ephemeral = promptBoolOnce . "ephemeral" "ephemeral" -}}
 {{-   else if $live_ubuntu -}}
 {{-     $headless = false -}}
 {{-     $ephemeral = false -}}
+{{-   else if stdinIsATTY -}}
+{{-     $headless = promptBoolOnce . "headless" "headless" -}}
+{{-     $ephemeral = promptBoolOnce . "ephemeral" "ephemeral" -}}
 {{-   else -}}
 {{-     $ephemeral = true -}}
 {{-     $headless = true -}}
