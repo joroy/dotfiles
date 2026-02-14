@@ -3,6 +3,7 @@
 {{- $taf := false -}}{{/* true if this machine is used for taf */}}
 {{- $headless := false -}}{{/* true if this machine does not have a screen and keyboard */}}
 {{- $personal := false -}}{{/* true if this machine should have personal secrets */}}
+{{- $live_ubuntu := false -}}{{/* true if this machine is a live ubuntu session */}}
 {{- "" -}}
 
 {{- $osID := .chezmoi.os -}}
@@ -42,6 +43,8 @@
 {{-   else if stdinIsATTY -}}
 {{-     $headless = promptBoolOnce . "headless" "headless" -}}
 {{-     $ephemeral = promptBoolOnce . "ephemeral" "ephemeral" -}}
+{{-   else if eq .chezmoi.username "ubuntu" -}}
+{{-     $live_ubuntu = true -}}
 {{-   else -}}
 {{-     $ephemeral = true -}}
 {{-     $headless = true -}}
